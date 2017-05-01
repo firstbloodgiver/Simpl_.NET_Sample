@@ -20,9 +20,9 @@ namespace Empty2Foo.Controllers
         public IActionResult Index(Person p)
         {
             if (ModelState.IsValid)
-                return View("PersonInfo", p);
+                return View("ValidateOk");
             else
-                return View();
+                return View("ValidateFailed");
         }
 
 
