@@ -55,8 +55,13 @@ namespace Empty2Foo
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseIdentity();
-            app.UseMvcWithDefaultRoute();
-            
+            app.UseMvc(routes => {
+                routes.MapRoute("", "X{controller}/{action}");
+                routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}");
+                routes.MapRoute(name: "", template: "Public/{controller=Home}/{action=Index}");
+                routes.MapRoute(name: "ShopSchema", template: "Shop/{action}", defaults: new { controller = "Home" });
+            });
+
         }
     }
 }
