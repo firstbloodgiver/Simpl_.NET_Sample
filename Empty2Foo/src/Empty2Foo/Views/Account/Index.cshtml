@@ -9,13 +9,16 @@
     }
     else
     {
-        foreach (AppUser user in Model)
+
+        @foreach (AppUser user in Model)                                                                                                
         {
-            <tr>
+            
+                <tr>
                 <td>@user.Id</td>
                 <td>@user.UserName</td>
                 <td>@user.Email</td>
             </tr>
+            
         }
     }
 </table>
