@@ -1,6 +1,22 @@
-﻿<h2>hot sell</h2>
-@foreach(string s in ViewBag.news)
+﻿@using Empty2Foo.Models
+<h2>hot sell</h2>
+@foreach (var i in ViewBag.imgs)
 {
-    <a href="#">@s</a>
+    <p><a href="#"><img src=@i /></a></p>
+    
+}
 
+
+
+@foreach(string n in ViewBag.news)
+{
+    <a href="#">@n</a>
+
+}
+<p>热门分类</p>
+@foreach (School s in Model)
+{
+
+
+    <p>名称：@s.Name ; 网址：@s.Site</p>
 }

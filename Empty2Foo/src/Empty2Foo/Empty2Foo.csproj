@@ -11,6 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\img\recom.jpg" />
+    <Content Include="wwwroot\img\special.jpg" />
     <Content Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
     <Content Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
     <Content Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />

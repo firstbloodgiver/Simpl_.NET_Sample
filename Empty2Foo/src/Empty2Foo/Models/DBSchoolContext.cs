@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Empty2Foo.Models
 {
-    public partial class C__USERS_ASUS_DOCUMENTS_GITLIBRARY_SIMPL__NET_SAMPLE_DATABASE_DATADEMO_MDFContext : DbContext
+    public partial class DBScoolContext : DbContext
     {
         public virtual DbSet<School> School { get; set; }
         public virtual DbSet<Student> Student { get; set; }
 
-        public C__USERS_ASUS_DOCUMENTS_GITLIBRARY_SIMPL__NET_SAMPLE_DATABASE_DATADEMO_MDFContext(DbContextOptions<C__USERS_ASUS_DOCUMENTS_GITLIBRARY_SIMPL__NET_SAMPLE_DATABASE_DATADEMO_MDFContext> options) : base(options) { }
+        public DBScoolContext(DbContextOptions<DBScoolContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

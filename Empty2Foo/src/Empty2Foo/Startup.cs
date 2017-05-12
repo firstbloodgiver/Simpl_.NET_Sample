@@ -38,7 +38,7 @@ namespace Empty2Foo
             });
             //var connection =   //链接字符串也可以从配置文件appsettings.json中读取
             //    @"Data Source= (LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Database\DataDemo.mdf; Integrated Security=True;Connect Timeout=30";
-            services.AddDbContext<C__USERS_ASUS_DOCUMENTS_GITLIBRARY_SIMPL__NET_SAMPLE_DATABASE_DATADEMO_MDFContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<DBScoolContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
 
