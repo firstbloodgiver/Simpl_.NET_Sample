@@ -1,3 +1,10 @@
-﻿
-<p>teat1</p>
-<p>ID:</p>
+﻿@using Empty2Foo.Models
+
+
+@foreach (School p in Model)
+{
+
+   
+    <p>名称：@p.Name ; 网址：@p.Site</p>
+    <p>ID:@p.ObjId</p>
+}
