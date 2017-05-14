@@ -26,5 +26,12 @@ namespace Empty2Foo.Controllers
             var schools = db.School.Where<School>(m => m.ObjId > 10).Take<School>(6);
             return View(schools);
         }
+
+        public IActionResult Item(int id)
+        {
+            School s = new School();
+            var p = db.School.Where<School>(m => m.ObjId == id);
+            return View(p);
+        }
     }
 }

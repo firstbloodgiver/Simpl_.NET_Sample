@@ -29,5 +29,10 @@ namespace Empty2Foo.Controllers
             var schools = _dbContext.School.AsQueryable<School>(); 
             return View("SchoolList", schools);
         }
+        public IActionResult one()
+        {
+            return View();
+
+        }
     }
 }
